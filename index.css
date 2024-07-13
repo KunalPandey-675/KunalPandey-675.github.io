@@ -94,10 +94,13 @@ body {
 
 }
 
+.ham {
+    display: none;
+}
+
 .menu {
     display: flex;
     align-items: center;
-
 }
 
 .menu ul {
@@ -126,6 +129,10 @@ body {
 
 }
 
+.main {
+    border: 1px solid red;
+}
+
 .hero {
     padding: 30px 0;
     display: flex;
@@ -147,7 +154,6 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    /* font-family: 'Arsenal SC'; */
     font-family: 'Roboto Condensed';
 
 }
@@ -203,7 +209,6 @@ body {
     margin: 50px 0;
     display: flex;
     padding: 0 60px;
-
     gap: 50px;
 
 }
@@ -225,7 +230,6 @@ body {
 
 .txt {
     width: 55%;
-
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -265,8 +269,6 @@ body {
 .sshow {
     display: flex;
     justify-content: center;
-    position: relative;
-    /* margin: 50px 0 0 0; */
 }
 
 .islide .imgs img {
@@ -286,6 +288,11 @@ body {
     gap: 15px;
     padding: 20px 60px;
     margin: 50px 0;
+}
+
+.lasttxt {
+    display: flex;
+    gap: 4px;
 }
 
 .last h2 {
@@ -424,7 +431,6 @@ body {
     font-size: 18px;
     font-weight: 100;
     cursor: pointer;
-    /* gap: 120px; */
 
 }
 
@@ -463,9 +469,11 @@ footer {
     flex-direction: column;
     gap: 20px;
 }
-footer a{
+
+footer a {
     color: white;
 }
+
 footer ul {
     list-style-type: none;
 }
@@ -563,10 +571,12 @@ select:focus {
     flex-direction: column;
     gap: 10px;
 }
-.abt h2{
+
+.abt h2 {
     font-size: 30px;
 }
-.abt li{
+
+.abt li {
     font-size: 18px;
     padding: 5px 0;
     display: flex;
@@ -585,9 +595,271 @@ select:focus {
     justify-content: center;
     font-weight: 500;
 }
-.icons{
+
+.icons {
     position: relative;
     top: 0.37em;
     width: 25px;
     height: 25px;
+}
+
+@media (max-width:650px) {
+    .logo {
+        margin: 0 0 0 5px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .logo img {
+        height: 53px;
+        width: 53px;
+        position: relative;
+        top: -0.2em;
+
+    }
+
+    .logo span a {
+        color: #1e2a69;
+        font-family: 'Dancing Script';
+        font-weight: 900;
+        font-size: 18px;
+
+    }
+
+    .nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .ham {
+        display: block;
+        display: flex;
+        align-items: center;
+        margin: 0 10px 0 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px 0px 10px;
+        gap: 20px;
+        margin: 0 0 20px 0;
+        /* justify-content: center; */
+    }
+
+    .hero img {
+        /* margin: 0 10px 0 10px; */
+        margin: 0px;
+        border-radius: 5px;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .herotxt {
+        width: 100%;
+        font-family: 'Roboto Condensed';
+    }
+
+    .herotxt h1 {
+        display: flex;
+        justify-content: center;
+        font-size: 43px;
+    }
+
+    .herotxt p {
+        display: flex;
+        justify-content: center;
+        font-size: 22px;
+    }
+
+    .hbtn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .herotxt button {
+        width: 35vw;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .herotxt button:hover {
+        padding: 10px;
+        font-size: 21px;
+        background-color: #243898;
+        transition: all 0.1s ease-in;
+    }
+
+    .hero2 {
+        background-color: #a1b2ff1f;
+        padding: 5px;
+width: 100%;
+    }
+
+    .hero2 h2 {
+        display: flex;
+        font-size: 20px;
+        /* justify-content: space-around; */
+    }
+
+    .second {
+        margin: 30px 0;
+        display: flex;
+        padding: 0 10px;
+        gap: 50px;
+    }
+
+    .txt {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .resimg {
+        display: none;
+    }
+
+    .hero3 h2 {
+        font-size: 30px;
+    }
+
+    .hero3 p {
+        font-size: 19px;
+    }
+
+    .sshow {
+        display: flex;
+    }
+
+    .islide .imgs img {
+        height: 40vh;
+        width: 95vw;
+    }
+
+    .last {
+        margin: 20px 0;
+        padding: 20px 10px 20px 10px;
+    }
+
+    .lasttxt {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .last h2 {
+        font-size: 28px;
+    }
+
+    .last button {
+        width: 30vw;
+    }
+
+    .test {
+        width: 100%;
+        overflow: hidden;
+        padding: 0;
+        gap: 20px;
+    }
+
+    .test h1 {
+        font-size: 47px;
+    }
+    .cardholder {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .card {
+        width: 80vw;
+    }
+
+    .faqs {
+        padding: 0;
+    }
+
+    .fcard {
+        width: 90vw;
+    }
+
+    .que {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .que h2 {
+        display: flex;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+    }
+
+    .ans {
+        font-size: 17px;
+    }
+
+    footer {
+        width: 100vw;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .upper {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bttm {
+        position: relative;
+        bottom: 12px;
+    }
+}
+@media (max-width:619px) {
+    .hero2{
+        display: none;
+    }
+    .herotxt h1 {
+        font-size: 40px;
+    }
+    .last h2 {
+        font-size: 25px;
+    }
+}
+@media (max-width:419px){
+    .ques{
+        font-size: 9px;
+        background-color: #fafbff;
+    }
+}
+@media (max-width:388px){
+.herotxt h1{
+    font-size: 35px;
+}
+.herotxt button{
+    width: 40vw;
+}
+.last button{
+    width: 40vw;
+}
 }

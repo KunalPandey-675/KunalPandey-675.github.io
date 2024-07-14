@@ -21,15 +21,46 @@ clk.forEach(a => {
         let b = this.nextElementSibling
         let c = a.querySelector('.arrow')
         if (b.style.display === 'block') {
-            a.style.backgroundColor='#263581'
+            a.style.backgroundColor = '#263581'
             b.style.display = 'none'
             c.classList.remove('rotate')
 
-            
+
         } else {
-            a.style.backgroundColor='#243898'
+            a.style.backgroundColor = '#243898'
             b.style.display = 'block'
             c.classList.add('rotate');
         }
     })
 });
+let h = document.querySelector('.ham img')
+h.addEventListener('click', function () {
+    if (h.getAttribute('src') === 'imgs/ham.svg') {
+        console.log('running')
+        let bg = document.querySelector('.hmenu')
+        bg.style.left = '0'
+        h.src = 'imgs/cross.svg'
+    }
+    else {
+        let bg = document.querySelector('.hmenu')
+        bg.style.left = '-100%'
+        h.src = 'imgs/ham.svg'
+    }
+    // let bg = document.querySelector('.hmenu')
+    // bg.style.left='0'
+})
+// let i = document.querySelector('.icons')
+//         let h = document.querySelector('.ham img')
+//         i.addEventListener('click', function () {
+//             if (h.getAttribute('src') === 'imgs/ham.svg') {
+//                 let bg = document.querySelector('.hmenu')
+//                 bg.style.left = '0'
+//                 h.src = 'imgs/cross.svg'
+//             }
+//             else {
+//                 let bg = document.querySelector('.hmenu')
+//                 bg.style.left = '-100%'
+//                 h.src = 'imgs/ham.svg'
+//             }
+//         }
+//         )

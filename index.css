@@ -60,13 +60,9 @@ body {
 }
 
 .nav {
-    /* background-color: #4e3d76; */
-    /* background-color: #4e342d; */
-
     display: flex;
     gap: 543px;
     width: 100%;
-    /* padding: 0 40px; */
     top: 0;
     left: 0;
 }
@@ -98,6 +94,93 @@ body {
     display: none;
 }
 
+.hmenu {
+    background-color: #263581;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all .3s ease-in;
+    z-index: 1;
+    height: 100vh;
+    width: 22vw;
+    padding: 0 10px;
+}
+
+.sicon {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0 0 0;
+}
+
+.sicon span h2 {
+    color: white;
+    /* font-size: 27px; */
+    font-size: 34px;
+    font-family: 'Dancing Script';
+}
+
+.sicon img {
+    width: 62px;
+    height: 62px;
+    position: relative;
+    top: -0.2em;
+}
+
+.hmenu a {
+    color: white;
+}
+
+.smenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.smenu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.smenu ul li {
+    width: 100%;
+    font-family: 'Roboto Condensed';
+    width: 22vw;
+    height: 30px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.smenu a {
+    color: #d5d6da;
+}
+
+.smenu a:hover {
+    transition: all 0.1s ease-in-out;
+    color: #ffffff;
+    font-size: 27px;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+
+.sp {
+    color: white;
+    position: absolute;
+    bottom: 30px;
+    font-family: 'Roboto Condensed';
+    font-size: 15px;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -127,10 +210,6 @@ body {
     font-size: 26px;
     color: #1e2a69;
 
-}
-
-.main {
-    border: 1px solid red;
 }
 
 .hero {
@@ -498,7 +577,8 @@ footer ul {
 
 .icon span h2 {
     color: white;
-    font-size: 30px;
+    font-size: 37px;
+    font-family: 'Dancing Script';
 }
 
 .icon img {
@@ -603,7 +683,8 @@ select:focus {
     height: 25px;
 }
 
-@media (max-width:650px) {
+
+@media (max-width:1200px) {
     .logo {
         margin: 0 0 0 5px;
         display: flex;
@@ -639,6 +720,17 @@ select:focus {
         display: flex;
         align-items: center;
         margin: 0 10px 0 0;
+    }
+    .hmenu{
+        width: 36vw;
+    }
+    .smenu {
+        width: 100%;
+    }
+
+    .smenu ul li {
+        width: 100%;
+        font-size: 25px;
     }
 
     .menu {
@@ -707,7 +799,7 @@ select:focus {
     .hero2 {
         background-color: #a1b2ff1f;
         padding: 5px;
-width: 100%;
+        width: 100%;
     }
 
     .hero2 h2 {
@@ -780,6 +872,7 @@ width: 100%;
     .test h1 {
         font-size: 47px;
     }
+
     .cardholder {
         display: flex;
         flex-direction: column;
@@ -799,7 +892,7 @@ width: 100%;
     }
 
     .que {
-        font-size: 12px;
+        font-size: 18px;
         padding: 5px;
     }
 
@@ -810,8 +903,8 @@ width: 100%;
     }
 
     .arrow {
-        width: 18px;
-        height: 18px;
+        width: 24px;
+        height: 24px;
     }
 
     .ans {
@@ -835,31 +928,89 @@ width: 100%;
         bottom: 12px;
     }
 }
-@media (max-width:619px) {
-    .hero2{
-        display: none;
+@media (max-width:768px){
+    .hmenu{
+        width: 36vw;
     }
-    .herotxt h1 {
-        font-size: 40px;
+    .smenu {
+        width: 100%;
     }
-    .last h2 {
+
+    .smenu ul li {
+        width: 100%;
         font-size: 25px;
     }
 }
-@media (max-width:419px){
-    .ques{
-        font-size: 9px;
-        background-color: #fafbff;
+@media (max-width:619px) {
+    .hero2 {
+        display: none;
+    }
+
+    .herotxt h1 {
+        font-size: 40px;
+    }
+
+    .last h2 {
+        font-size: 25px;
+    }
+    .que{
+        font-size: 11px;
+    }
+
+    .arrow {
+        width: 24px;
+        height: 24px;
+    }
+    .hmenu {
+        width: 44vw;
+    }
+
+    .sicon {
+        width: 100%;
+        padding: 10px 0 0 0;
+    }
+
+    .sicon span h2 {
+        font-size: 27px;
+    }
+
+    .sicon img {
+        width: 53px;
+        height: 53px;
+        position: relative;
+        top: -0.15em;
+    }
+
+    .smenu {
+        width: 100%;
+    }
+
+    .smenu ul li {
+        width: 100%;
+        font-size: 20px;
     }
 }
-@media (max-width:388px){
-.herotxt h1{
-    font-size: 35px;
-}
-.herotxt button{
-    width: 40vw;
-}
-.last button{
-    width: 40vw;
-}
+
+@media (max-width:390px) {
+    .herotxt h1 {
+        font-size: 35px;
+    }
+
+    .herotxt button {
+        width: 40vw;
+    }
+
+    .last button {
+        width: 40vw;
+    }
+
+    .que {
+        font-size: 10px;
+    }
+
+    .arrow {
+        top: 0px;
+        width: 16px;
+        height: 16px;
+    }
 }

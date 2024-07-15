@@ -151,6 +151,7 @@ body {
     width: 22vw;
     height: 30px;
     font-weight: 600;
+    cursor: pointer;
     font-size: 25px;
 }
 

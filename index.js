@@ -13,7 +13,6 @@ function showSlides() {
 }
 
 const clk = document.querySelectorAll('.que')
-console.log(clk)
 clk.forEach(a => {
     a.addEventListener('click', function () {
         // let bg = document.querySelector('.que')
@@ -36,7 +35,6 @@ clk.forEach(a => {
 let h = document.querySelector('.ham img')
 h.addEventListener('click', function () {
     if (h.getAttribute('src') === 'imgs/ham.svg') {
-        console.log('running')
         let bg = document.querySelector('.hmenu')
         bg.style.left = '0'
         h.src = 'imgs/cross.svg'
@@ -46,21 +44,21 @@ h.addEventListener('click', function () {
         bg.style.left = '-100%'
         h.src = 'imgs/ham.svg'
     }
-    // let bg = document.querySelector('.hmenu')
-    // bg.style.left='0'
 })
-// let i = document.querySelector('.icons')
-//         let h = document.querySelector('.ham img')
-//         i.addEventListener('click', function () {
-//             if (h.getAttribute('src') === 'imgs/ham.svg') {
-//                 let bg = document.querySelector('.hmenu')
-//                 bg.style.left = '0'
-//                 h.src = 'imgs/cross.svg'
-//             }
-//             else {
-//                 let bg = document.querySelector('.hmenu')
-//                 bg.style.left = '-100%'
-//                 h.src = 'imgs/ham.svg'
-//             }
-//         }
-//         )
+let c = document.querySelectorAll('.pop')
+c.forEach(e => {
+    e.addEventListener('click', async function () {
+        let p = document.querySelector('.popup')
+        setTimeout(() => {
+            p.style.opacity = '1'
+            // p.style.top = '40px'
+            p.style.bottom = '40px'
+        }, 100);
+        setTimeout(() => {
+            console.log('js is running')
+            p.style.opacity = '0'
+            // p.style.top = '-100px'
+            p.style.bottom = '-100px'
+        }, 1200);
+    })
+});
